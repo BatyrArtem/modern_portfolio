@@ -41,9 +41,20 @@
 
     .portrait {
       background: url("../img/portrait_small.PNG");
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
   }
 }
 
