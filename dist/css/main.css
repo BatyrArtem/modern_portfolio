@@ -207,6 +207,7 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
+  border-radius: 5px;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #eece1a;
