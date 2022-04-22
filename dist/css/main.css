@@ -74,8 +74,8 @@
 * {
   box-sizing: border-box; }
 
-body {
-  background: #444;
+body { 
+  /* background: #444; вместо этого цвета добавил фон */
   background: url(../img/background-img.jpg);
   background-size: cover;
   color: #fff;
