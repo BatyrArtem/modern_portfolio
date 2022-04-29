@@ -84,7 +84,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background-image-main.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -105,13 +105,28 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
+    color:rgb(83, 173, 241);
     font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(73, 73, 73, 0.5);
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(238, 206, 27), rgba(83, 173, 241), rgba(83, 173, 241),rgba(238, 206, 27));
+    background-size: 250%;
+    background-position: left;
+    transition: 0.5s background-position ease-in-out;
+   }
+  h1.sm-heading:hover,
+  h2.sm-heading:hover,
+  h3.sm-heading:hover { 
+    background-position: right;
+   }
 
 a {
   color: #fff;
@@ -121,9 +136,11 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%; }
-
+.text-firstly {
+  color: rgb(83, 173, 241);
+}
 .text-secondary {
-  color: #eece1a; }
+  color: rgb(238, 206, 27); }
 
 main {
   padding: 4rem;
@@ -134,7 +151,8 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #eece1a;
-        transition: all 0.5s ease-out; }
+        font-size: 18px;
+        transition: all 0.7s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -157,8 +175,13 @@ main {
   border: #eece1a 3px solid; }
 
 .bio {
+  padding: 0 10px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to left top,#adf2f7 10%,  transparent 30%, transparent 70%, #adf2f7 90%);
+  border-image-slice: 1;
   grid-area: bio;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+ }
 
 .job-1 {
   grid-area: job1; }
@@ -170,9 +193,17 @@ main {
   grid-area: job3; }
 
 .job {
-  background: #515151;
+  /* background: #515151; */
+  border-radius: 7px;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid; }
+  /* border-bottom: #eece1a 5px solid; 
+  border-top: rgb(83, 173, 241) 2px solid;
+  border-right: rgb(83, 173, 241) 2px solid;
+  border-left: rgb(83, 173, 241) 2px solid; */
+  border: 3px solid transparent;
+  border-image: linear-gradient(to left top,#adf2f7 10%,  transparent 30%, transparent 70%, #adf2f7 90%);
+  border-image-slice: 1;
+}
 
 .projects {
   display: grid;
@@ -180,9 +211,11 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #fff solid; 
+    border-radius: 7px;
+  }
     .projects img:hover {
-      opacity: 0.5;
+      opacity: 0.7;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
@@ -193,8 +226,10 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
+    color: rgba(83, 173, 241);
     font-size: 2rem;
     border: 3px #fff solid;
+    border-radius: 10px;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
@@ -213,22 +248,54 @@ main {
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #eece1a;
+    background: #fff;
+    transition: all 0.7s ease-out;;
     color: ser-text-color #eece1a; }
 
 .btn-dark {
-  background: black;
-  color: #fff; }
+  /* background: black; */
+  background: rgba(238, 206, 27);
+  /* color: #fff; */
+  color: #333;
+ }
 
 .btn-light {
-  background: #c4c4c4;
-  color: #333; }
+  /* background: #c4c4c4; */
+  background: rgba(83, 173, 241);
+  color: #333;
+}
 
 #main-footer {
-  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid white;
+  height: 40px;
+  /* text-align: center;
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
-  height: 60px; }
+  height: 60px; */
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(238, 206, 27), rgb(83, 173, 241), rgba(83, 173, 241),rgba(238, 206, 27));
+  background-size: 250%;
+  background-position: left;
+  transition: 0.5s background-position ease-in-out;
+}
+#main-footer:hover { 
+  background-position: right;
+}
+#main-footer img{
+  position:relative;
+  bottom: 40px;
+  width: 50px;
+  height: 55px;
+  margin-right: 5px;
+}
+#main-footer p {
+  margin: 5px 40px 0 0;
+}
 
 @media screen and (min-width: 1171px) {
   .projects {
