@@ -107,6 +107,9 @@ h3 {
   h3.lg-heading {
     color:rgb(83, 173, 241);
     font-size: 6rem; }
+  #heading {
+    font-size: 4rem;
+  }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -232,7 +235,7 @@ main {
     font-size: 1rem;
     border: 3px #fff solid;
     border-radius: 10px;
-    padding: 1.5rem 2.5rem;
+    padding: 0.5rem 1rem;
     margin-bottom: 2rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
