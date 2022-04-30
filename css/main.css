@@ -147,7 +147,8 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 60px); 
+}
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -284,12 +285,13 @@ main {
 }
 
 #main-footer {
-  margin: 0;
+  margin-top: 8px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   border: 2px solid white;
   height: 40px;
+  /* height: auto; */
   /* text-align: center;
   padding: 1rem;
   background: #2b2b2b;
