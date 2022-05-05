@@ -130,10 +130,6 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.5); }
 
-#contact {
-  box-sizing: content-box;
-}
-
 h1,
 h2,
 h3 {
