@@ -352,16 +352,20 @@ main {
 }
 
 .music-container {
+  font-size: 14px;
   background: linear-gradient(90deg, rgba(238, 206, 27), rgba(83, 173, 241));
   color: white;
   border: 2px solid white;
   border-radius: 15px;
-  box-shadow: 0 10px 10px 0 rgba(200, 247, 197, 0.6);
+  box-shadow: 0 5px 5px 0 rgba(200, 247, 197, 0.6);
   display: flex;
-  padding: 20px 20px;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 10px;
   position: relative;
-  margin: 25px 0 0 0;
-  z-index: 10;
+  margin: 15px 0 0 0;
+  z-index: 0;
 }
 
 .img-container {
