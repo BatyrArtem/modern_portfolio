@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/b5076e303a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="css/main.css">
     <title>Contact me</title>
 </head>
@@ -54,7 +55,7 @@
             <span class="text-secondary">Me</span>
         </h1>
         <h2 class="sm-heading">
-            This is how you can reach me...
+            You can wish me happy birthday below:
         </h2>
         <div class="boxes">
             <div class="box-img">
@@ -73,6 +74,32 @@
                 </span> Odessa, Ukraine
             </div>
         </div>
+        <div class="music-main">
+            <h3>3-minute relax</h3>
+            <div class="music-container">
+                <div class="music-info">
+                    <h4 id="title">Time Back</h4>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <audio src="music/Swan_lake-Tchaikovsky.mp3" id="audio"></audio>
+                <div class="img-container">
+                    <img src="./img/img-for-music/Swan_lake-Tchaikovsky.jpg" alt="music-cover" id="cover" />
+                </div>
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer id="main-footer">
@@ -80,5 +107,6 @@
         <p>ykycuk &copy; 2021</p>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/music.js"></script>
 </body>
 </html>
