@@ -452,7 +452,7 @@ main {
   top: 0;
   left: 20px;
   width: calc(100% - 40px);
-  padding: 0px 10px 0px 75px;
+  padding: 0px 10px 0px 65px;
   opacity: 0;
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
@@ -461,6 +461,7 @@ main {
 
 .music-info h4 {  
   margin: 0;
+  text-align: center;
 }
 
 .music-container.play .music-info {
