@@ -343,13 +343,39 @@ main {
   margin: 0 auto;
 }
 
-.music-main h3 {
-  border: 3px solid transparent;
-  border-image: linear-gradient(to left top,#fff 10%,  transparent 30%, transparent 70%, #fff 90%);
-  border-image-slice: 1;
+.glows {
+  font-weight: 600;
+  color: #fff;
   padding: 5px;
   margin-bottom: 50px;
+  border: 2px solid transparent;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-image: linear-gradient(to left top,#fff 10%,  transparent 30%, transparent 70%, #fff 90%);
+  border-image-slice: 1;
+  background: linear-gradient(90deg, rgba(238, 206, 27), rgba(83, 173, 241));
+
+  background-size: 100%;
+  background-position: left;
+  transition: 1.0s background-position ease-in-out;
 }
+
+.glows:hover { 
+  background-size: 500%;
+  background-position: right;
+ }
+
+.glows-play {
+  background-size: 500%;
+  background-position: right;
+  transition: 1.0s background-position ease-in-out;
+}
+
+/* .glows-transition {
+  background-size: 100%;
+  background-position: left;
+  transition: 1.0s background-position ease-in-out;
+} */
 
 .music-container {
   width: 300px;
@@ -444,6 +470,7 @@ main {
 .music-info {
   background-color: rgba(255, 255, 255, 0.5);
   /* background: linear-gradient(90deg, rgba(238, 206, 27), rgba(83, 173, 241)); */
+  /* color: rgba(238, 206, 27); */
   border-top: 2px solid white;
   border-right: 2px solid white;
   border-left: 2px solid white;
