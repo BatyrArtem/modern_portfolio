@@ -7,10 +7,15 @@ const progress = document.querySelector('.progress')
 const progressContainer = document.querySelector('.progress-container')
 const title = document.querySelector('#title')
 const cover = document.querySelector('#cover')
+const musicTitle = document.querySelector('.glows')
 
 //Song titles
 const songs = ['Croatian_rapsody', 'Moonlight-Beethoven', 'Angels-Mozart',
     'Nutcracker-Tchaikovsky', 'Piano-Amelie', 'Swan_lake-Tchaikovsky', 'Time_back-Nightcore', 'Una_mattina-Einaudi']
+
+let changeBackground = true
+let firstPressPlay = true
+let changeBackgroundPause = false
 
 //keep track of songs
 
@@ -33,6 +38,13 @@ function playSong() {
     playBtn.querySelector('i.fas').classList.remove('fa-play')
     playBtn.querySelector('i.fas').classList.add('fa-pause')
     audio.play()
+    musicTitle.classList.add('glows-play')
+    changeBackgroundPause = false
+    if(firstPressPlay) {
+        firstPressPlay = false
+        changeBackgroundPause = false
+        changeBackgrounTitleInterval()
+    }
 }
 
 function pauseSong() {
@@ -40,6 +52,8 @@ function pauseSong() {
     playBtn.querySelector('i.fas').classList.remove('fa-pause')
     playBtn.querySelector('i.fas').classList.add('fa-play')
     audio.pause()
+    musicTitle.classList.remove('glows-play')
+    changeBackgroundPause = true
 }
 
 function prevSong() {
@@ -77,6 +91,21 @@ function setProgress(e) {
 
     audio.currentTime = (clickX / width) * duration
     
+}
+
+function changeBackgrounTitleInterval() {
+        setInterval(x => {
+            if(!changeBackgroundPause) {
+                if(changeBackground) {
+                    changeBackground = !changeBackground
+                    musicTitle.classList.add('glows-play')
+                }
+                else {
+                    changeBackground = !changeBackground
+                    musicTitle.classList.remove("glows-play")
+                }
+            }
+        }, 1500)
 }
 
 //event listeners
