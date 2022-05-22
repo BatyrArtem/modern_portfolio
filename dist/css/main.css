@@ -428,12 +428,13 @@ main {
   font-size: 20px;
   cursor: pointer;
   padding: 0;
-  margin: 0 0 0 30px;
+  margin: 0 10px 0 20px;
 }
+
 
 .action-btn-big {
   font-size: 40px;
-  width: 32px;
+  width: 42px;
 }
 
 .action-btn:focus {
