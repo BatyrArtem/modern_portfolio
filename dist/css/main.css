@@ -600,6 +600,12 @@ main {
   .body-startPage {
     overflow: hidden;
   }
+  _::-webkit-full-page-media, _:future, :root .safari_only #myVideo{
+    display: none;
+  }
+  /* #myVideo {
+    display: none;
+  } */
   main {
     align-items: center;
     text-align: center; }
