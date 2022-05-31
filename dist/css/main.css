@@ -588,6 +588,9 @@ main {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
+  .body-startPage {
+    overflow: hidden;
+  }
   main {
     align-items: center;
     text-align: center; }
