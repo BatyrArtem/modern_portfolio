@@ -632,14 +632,19 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  padding: 2rem;
-  main#home h1 {
-    margin-top: 10vh; }
-    main#home h1 .lg-heading {
-      margin-top: 1rem;
-      font-size: 5rem; }
-  .projects {
-    grid-template-columns: 1fr; }
-    #main-footer {
-      margin-top: 0px;}
+  main {
+    padding: 2rem;
+  }
+  main#home {
+    padding-top: 150px;
+  }
+    main#home h1 {
+      margin-top: 10vh; }
+      main#home h1 .lg-heading {
+        margin-top: 1rem;
+        font-size: 5rem; }
+    .projects {
+      grid-template-columns: 1fr; }
+      #main-footer {
+        margin-top: 0px;}
   }
