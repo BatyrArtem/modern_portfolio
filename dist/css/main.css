@@ -95,22 +95,28 @@
     display: block;
     margin: auto;
     height: 2px;
-    animation: underline 3s infinite;}
+    animation: underline 2s infinite;}
+    
+@keyframes underline {
+  0% { width: 0%; background-color: var(--clr-white);}
+  100% {width: 100%; background-color: transparent;}
+}
 
-  @keyframes underline {
-    0% { width: 0%; background-color: var(--clr-white);}
-    100% {width: 100%; background-color: transparent;}
-  }
+.nav-item:nth-child(1) .nav-link:after {
+    animation-delay: 0.1s; }
+.nav-item:nth-child(2) .nav-link:after {
+  animation-delay: 0.3s; }
+.nav-item:nth-child(3) .nav-link:after {
+  animation-delay: 0.5s; }
+.nav-item:nth-child(4) .nav-link:after {
+  animation-delay: 0.7s; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
-
 .nav-item:nth-child(2) {
   transition-delay: 0.2s; }
-
 .nav-item:nth-child(3) {
   transition-delay: 0.3s; }
-
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
