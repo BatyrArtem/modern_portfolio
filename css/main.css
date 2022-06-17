@@ -150,26 +150,22 @@ h3 {
   #heading {
     font-size: 4rem;
   }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5);
-    color: var(--clr-white);
-    display: inline-block;
-    border: 2px solid var(--clr-white);
-    border-radius: 5px;
-    background: linear-gradient(90deg, var(--clr-yellow), var(--clr-blue), var(--clr-blue), var(--clr-yellow));
-    background-size: 250%;
-    background-position: left;
-    transition: 0.5s background-position ease-in-out;
-   }
-  h1.sm-heading:hover,
-  h2.sm-heading:hover,
-  h3.sm-heading:hover { 
-    background-position: right;
-   }
+   h1.sm-heading,
+   h2.sm-heading,
+   h3.sm-heading {
+     margin-bottom: 2rem;
+     padding: 0.2rem 1rem;
+     color: var(--clr-white);
+     display: inline-block;
+     border: 2px solid var(--clr-white);
+     border-radius: 5px;
+     background: linear-gradient(90deg, var(--clr-yellow), var(--clr-blue), var(--clr-blue), var(--clr-yellow));
+     background-size: 300%;
+
+     -webkit-animation: Animation 3s ease infinite;
+     -moz-animation: Animation 3s ease infinite;
+     animation: Animation 3s ease infinite; 
+    }
 
 a {
   color: var(--clr-white);
@@ -346,6 +342,7 @@ main {
 .btn-light {
   background: var(--clr-blue);
   color: #333;}
+
 #main-footer {
   margin-top: 20px;
   display: flex;
@@ -354,26 +351,47 @@ main {
   border: 2px solid var(--clr-white);
   height: 40px;
   border-radius: 5px;
-  background: linear-gradient(90deg, var(--clr-yellow), var(--clr-blue), var(--clr-blue), var(--clr-yellow));
-  background-size: 250%;
-  background-position: left;
-  transition: 0.5s background-position ease-in-out;}
-  #main-footer:hover { 
-    background-position: right;}
-    #main-footer img{
-      position:relative;
-      bottom: 40px;
-      width: 50px;
-      height: 55px;
-      margin-right: 5px;
-      -webkit-transition: opacity 0.5s ease-in-out;
-      -moz-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
-      transition: opacity 0.5s ease-in-out;}
-      #main-footer img:hover{
-        opacity: 0;}
-    #main-footer p {
-      margin: 5px 40px 0 0;}
+  animation-name: backgroundColorPalette;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+}
+  #main-footer img{
+    position:relative;
+    bottom: 40px;
+    width: 50px;
+    height: 55px;
+    margin-right: 5px;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;}
+    #main-footer img:hover{
+      opacity: 0;}
+  #main-footer p {
+    margin: 5px 40px 0 0;}
+
+@-webkit-keyframes Animation {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+@keyframes backgroundColorPalette {
+	0% {background: var(--clr-yellow);}
+	100% {background: var(--clr-blue);}
+}
 
 @media screen and (min-width: 1171px) {
   .projects {
