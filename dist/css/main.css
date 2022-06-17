@@ -242,6 +242,78 @@ main {
   opacity: 1;
 }
 
+.icons .rotateRight{
+  animation: rotationright 8s infinite linear;
+}
+.icons .upDown{
+  animation: updown 3s ease infinite;
+}
+.icons .leftRight {
+  animation: leftright 3s ease infinite;
+}
+.icons .rotateLeft{
+  animation: rotationleft 8s infinite linear;
+}
+.icons .downUp{
+  animation: downup 3s ease infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-15%);
+  }
+
+  50% {
+    transform: translateY(15%);
+  }
+
+  100% {
+    transform: translateY(-15%);
+  }
+}
+@keyframes downup {
+  0% {
+    transform: translateY(15%);
+  }
+  
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(15%);
+  }
+}
+@keyframes rotationright {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes leftright {
+  0% {
+    transform: translateX(-15%);
+  }
+
+  50% {
+    transform: translateX(15%);
+  }
+
+  100% {
+    transform: translateX(-15%);
+  }
+}
+@keyframes rotationleft {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .hide {
   grid-area: bioimage;
   margin: auto;
