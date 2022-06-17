@@ -334,18 +334,18 @@ main {
   border: 0;
   border-radius: 5px;
   margin-bottom: 0.3rem; }
-  .btn-dark {
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: var(--clr-yellow);
-    color: #333;}
-  .btn-light {
-    background: var(--clr-blue);
-    color: #333;}
-    .btn:hover, .btn-dark:hover, .btn-light:hover {
-      background: var(--clr-yellow);
-      background: var(--clr-white);
-      transition: all 0.7s ease-out;;
-      color: ser-text-color var(--clr-yellow); }
+    background: var(--clr-white);
+    transition: all 0.7s ease-out;;
+    color: ser-text-color #eece1a; }
 
+.btn-dark {
+  background: var(--clr-yellow);
+  color: #333;}
+.btn-light {
+  background: var(--clr-blue);
+  color: #333;}
 #main-footer {
   margin-top: 20px;
   display: flex;
