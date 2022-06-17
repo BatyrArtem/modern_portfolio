@@ -162,10 +162,18 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    color:var(--clr-blue);
-    font-size: 6rem; }
+    font-size: 6rem;
+    background: 50% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+               glow 2500ms linear infinite 2000ms;
+  }
   #heading {
-    font-size: 4rem;
+    font-size: 5rem;
   }
    h1.sm-heading,
    h2.sm-heading,
@@ -183,6 +191,20 @@ h3 {
      -moz-animation: Animation 3s ease infinite;
      animation: Animation 3s ease infinite; 
     }
+    
+@keyframes reveal {
+  80%{
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px var(--clr-blue);
+  }
+}
 
 a {
   color: var(--clr-white);
@@ -204,7 +226,7 @@ main {
   min-height: calc(100vh - 60px); 
 }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;}
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -608,17 +630,22 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  
   h2.sm-heading{
     margin-left: 2rem;
     margin-right: 2rem;
     max-width: 250px;}
   #home .sm-heading {
     max-width: 210px;}
+  .lg-heading {
+    margin-top: 2rem;
+  }
     
   main {
     padding: 2rem;}
     main#home {
-      padding-top: 150px;}
+      padding-top: 130px;
+    }
       main#home h1 {
         margin-top: 10vh; }
         main#home h1 .lg-heading {
