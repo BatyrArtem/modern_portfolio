@@ -163,14 +163,6 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem;
-    background: 50% 100% / 50% 50% no-repeat
-                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-family: "Source Sans Pro", sans-serif;
-    animation: reveal 3000ms ease-in-out forwards 200ms,
-               glow 2500ms linear infinite 2000ms;
   }
   #heading {
     font-size: 5rem;
@@ -192,6 +184,17 @@ h3 {
      animation: Animation 3s ease infinite; 
     }
     
+.animate-lg-heading {
+      background: 50% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+               glow 2500ms linear infinite 2000ms;
+}
+
 @keyframes reveal {
   80%{
     letter-spacing: 8px;

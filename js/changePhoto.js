@@ -1,5 +1,4 @@
-const aboutMe = document.getElementById("about-info")
-const portrait = document.getElementById("portrait")
+const aboutMe = document.getElementById("about-info--img")
 
 let changeImage = true;
 let changeImageMenu = true;
