@@ -630,7 +630,10 @@ main {
  "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } 
+
+  .job, .bio {
+    text-align: start;} }
 
 @media screen and (max-width: 500px) {
   
