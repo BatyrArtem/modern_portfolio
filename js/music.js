@@ -8,6 +8,18 @@ const progressContainer = document.querySelector('.progress-container')
 const title = document.querySelector('#title')
 const cover = document.querySelector('#cover')
 const musicTitle = document.querySelector('.glows')
+// const get = element => document.querySelector(element)
+
+// const musicContainer = get('.music-container')
+// const playBtn = get('#play')
+// const prevBtn = get('#prev')
+// const nextBtn = get('#next')
+// const audio = get('#audio')
+// const progress = get('.progress')
+// const progressContainer = get('.progress-container')
+// const title = get('#title')
+// const cover = get('#cover')
+// const musicTitle = get('.glows')
 
 //Song titles
 const songs = ['Croatian_rapsody', 'Moonlight-Beethoven', 'Angels-Mozart',
