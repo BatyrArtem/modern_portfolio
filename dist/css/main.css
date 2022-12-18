@@ -384,6 +384,10 @@ main {
   color: white;
   padding: 20px;
 }
+.disabled {
+  /* pointer-events: none;  */
+  cursor: not-allowed;
+}
 
 .bio:before, .job:before{
   content: '';
